@@ -7,6 +7,6 @@ def genCrap(length):
     chars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
 
     for i in range(0, length):
-        crap += chars[randbelow(len(chars))]
+        crap += chars[randbelow(62)]
 
-    return str(crap)  #just incase it's all numbers ;)
+    return crap
